@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Космический туризм</title>
   <link rel="stylesheet" href="css/reset.css">
@@ -50,7 +51,7 @@
       </div>
     </div>
   </header>
-  <!-- <main class="main">
+  <main class="main">
     <section class="about">
       <div class="container">
         <h2 class="title">О нас</h2>
@@ -76,13 +77,13 @@
                 <td class="about__table-td">вернещься?</td>
               </tr>
               <tr class="about__table-tr">
-                <td class="about__table-td">
+                <td aria-label="время в пути" class="about__table-td">
                   1<span>час</span>
                 </td>
-                <td class="about__table-td">80<span>км</span></td>
-                <td class="about__table-td">4-5<span>мин</span></td>
-                <td class="about__table-td">250<span>тыс.дол</span></td>
-                <td class="about__table-td">99<span>%</span></td>
+                <td aria-label="расстояние" class="about__table-td">80<span>км</span></td>
+                <td aria-label="в невесомости" class="about__table-td">4-5<span>мин</span></td>
+                <td aria-label="стоимость" class="about__table-td">250<span>тыс.дол</span></td>
+                <td aria-label="вернещься?" class="about__table-td">99<span>%</span></td>
               </tr>
             </table>
             <button class="button">Забранировать полёт</button>
@@ -114,13 +115,11 @@
                 <td class="about__table-td">вернещься?</td>
               </tr>
               <tr class="about__table-tr">
-                <td class="about__table-td">
-                  1<span>час</span>
-                </td>
-                <td class="about__table-td">80<span>км</span></td>
-                <td class="about__table-td">4-5<span>мин</span></td>
-                <td class="about__table-td">250<span>тыс.дол</span></td>
-                <td class="about__table-td">99<span>%</span></td>
+                <td aria-label="время в пути" class="about__table-td">1<span>час</span></td>
+                <td aria-label="расстояние" class="about__table-td">80<span>км</span></td>
+                <td aria-label="в невесомости" class="about__table-td">4-5<span>мин</span></td>
+                <td aria-label="стоимость" class="about__table-td">250<span>тыс.дол</span></td>
+                <td aria-label="вернещься?" class="about__table-td">99<span>%</span></td>
               </tr>
 
             </table>
@@ -153,11 +152,11 @@
                 <td class="about__table-td">вернещься?</td>
               </tr>
               <tr class="about__table-tr">
-                <td class="about__table-td">150<span>lдней</span></td>
-                <td class="about__table-td">55<span>млн.км</span></td>
-                <td class="about__table-td">много<span>мин</span></td>
-                <td class="about__table-td">10<span>млр.дол</span></td>
-                <td class="about__table-td">1<span>%</span></td>
+                <td aria-label="время в пути" class="about__table-td">150<span>lдней</span></td>
+                <td aria-label="расстояние" class="about__table-td">55<span>млн.км</span></td>
+                <td aria-label="в невесомости" class="about__table-td">много<span>мин</span></td>
+                <td aria-label="стоимость" class="about__table-td">10<span>млр.дол</span></td>
+                <td aria-label="вернещься?" class="about__table-td">1<span>%</span></td>
               </tr>
             </table>
             <button class="button">Забранировать полёт</button>
@@ -166,6 +165,7 @@
 
       </div>
     </section>
+
     <section class="how-to">
       <div class="container">
         <h2 class="title">Как все<br> происходит</h2>
@@ -217,13 +217,24 @@
               </foreignObject>
             </g>
           </svg>
+          <ul class="how-to__box-list">
+            <li class="how-to__box-item">Выбираете программу</li>
+            <li class="how-to__box-item">Оплачиваете</li>
+            <li class="how-to__box-item">Какая- то будет подготовка</li>
+            <li class="how-to__box-item">Садимся. Летим. Невесомость</text></li>
+            <li class="how-to__box-item">Делаем фото в инстаграм</li>
+            <li class="how-to__box-item">Едим из тюбиков: 5 видов меню на выбор
+              (веган, спорт, безлактозное, безглютеновое, обычное)</li>
+            <li class="how-to__box-item">Приземляемся, но это не точно</li>
+          </ul>
         </div>
       </div>
     </section>
+
     <section class="to-book">
       <div class="container">
         <div class="to-book__inner">
-          <h2 class="title">
+          <h2 class="title to-book__title">
             Успей <br>забронировать
           </h2>
           <p class="to-book__text">
@@ -237,6 +248,7 @@
         </div>
       </div>
     </section>
+
     <section class="info">
       <div class="special-offer">
         <div class="container">
@@ -272,7 +284,7 @@
       </div>
       <div class="services">
         <div class="container">
-          <h2 class="title">Дополнительные <br> услуги</h2>
+          <h2 class="title services__title">Дополнительные <br> услуги</h2>
           <div class="services__inner">
             <div class="services__box-list">
               <p class="services__list-title">С Вами полетит профессиональный фотограф</p>
@@ -312,6 +324,7 @@
         </div>
       </div>
     </section>
+
     <section class="contacts ">
       <div class="container">
         <div class="contacts__inner">
@@ -341,6 +354,7 @@
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
@@ -361,14 +375,14 @@
           <li class="footer__links-item"><a class="footer__links-link" href="#">spacex.com</a></li>
           <li class="footer__links-item"><a class="footer__links-link" href="#">blueorigin.com</a></li>
           <li class="footer__links-item"><a class="footer__links-link" href="#">virgingalactic.com</a></li>
-          <li class="footer__links-item"><a class="footer__links-link" href="tel:080000000000">0 800 000 000 00</a></li>
+          <li class="footer__links-item"><a class="footer__links-link" href="tel:080000000000">0 800 000 000 00</a>
+          </li>
           <li class="footer__links-item"><a class="footer__links-link" href="#">mks</a></li>
 
         </ul>
       </div>
     </div>
   </footer>
-
   <script src="js/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
